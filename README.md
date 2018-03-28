@@ -1,22 +1,6 @@
 # Bash-CMD
 
 ## CMD
-  - cls
-  - exit
-  - help
-  - cd
-  - dir
-  - copy
-  - robocopy
-  - move
-  - del
-  - rename
-  - format
-  - md
-  - tree
-  - type
-  
-  
   - systeminfo
   - ver
   - control panel
