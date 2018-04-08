@@ -24,6 +24,8 @@ header {
     height: 20%;
     width: 100%;
     background: linear-gradient(to top right, rgba(53, 150, 178, 0.9), rgba(54, 109, 198, 0.9), rgba(28, 59, 142, 0.9), rgba(0, 0, 0, 0.90));
+    background-attachment: fixed; /* Fondo fijo */
+    background-size: cover; /* Imagen cubre todo */
 }
 
 .main {
