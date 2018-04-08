@@ -48,3 +48,7 @@ footer {
 ul {
     margin-left: 5%;
 }
+
+li {
+    font: bold 1.2em sans-serif;
+}

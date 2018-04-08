@@ -10,9 +10,6 @@
            <h1>Bash&CMD</h1>
            <nav>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
             </ul>
            </nav>
        </header>
@@ -21,6 +18,8 @@
            <section class="content">
                 <h2>Bash</h2>
                 <h2>CMD</h2>
+                
+                <h3>Moverse por el sistema y gestion de archivos</h3>
                 <ul>
                     <li>cls</li>
                     <p>Limpia la ventana de CMD eliminando el contenido de operaciones anteriores.</p>
@@ -32,49 +31,102 @@
                     <p>Muestra todos los comandos disponibles y una breve descripción. Si quieres obtener información sobre un comando en concreto o cómo formar la sintaxis de un determinado comando, escribe el comando seguido de una barra diagonal y un signo de interrogación. Por ejemplo: cd /?</p>
                     
                     <li>cd</li>
-                    <p> Este es uno de los comandos más útiles para moverse por la ventana de comandos de Windows ya que sirve para moverte por las carpetas de tu PC. Dependiendo del atributo que lo acompañe realizará una acción u otra. Por ejemplo, si insertas el comando cd <rutadecarpeta>, irá directamente al directorio indicado, mientras que si introduces el comando cd.. (con dos puntos consecutivos) sale de la actual carpeta al nivel superior.</p>
+                    <p> Este es uno de los comandos más útiles para moverse por la ventana de comandos de Windows ya que sirve para moverte por las carpetas de tu PC. Dependiendo del atributo que lo acompañe realizará una acción u otra. Por ejemplo, si insertas el comando cd &lt;rutadecarpeta&gt;, irá directamente al directorio indicado, mientras que si introduces el comando cd.. (con dos puntos consecutivos) sale de la actual carpeta al nivel superior.</p>
                     
                     <li>dir</li>
                     <p>Este comando muestra el contenido de un directorio listando los archivos y carpetas que se encuentran en él. Muy útil para navegar entre los distintos directorios y acceder los archivos y carpetas.</p>
                     
-                    <li>Copy >origen> destino></li>
+                    <li>Copy &lt;origen&gt; &lt;destino&gt;</li>
                     <p> Como ya puedes imaginar, con este comando podrás copiar un archivo de origen en una nueva ubicación de cualquier ruta dentro del disco duro.</p>
                     
                     <li>robocopy</li>
                     <p>Este comando invoca a una función mejorada del comando copiar y permite realizar esta función de forma mucho más eficiente ofreciendo mayor velocidad y permitiendo cancelar y retomar la tarea ya que muestra un indicador de progreso. Muy útil si copias archivos de gran tamaño o archivos delicados.</p>
                     
-                    <li>move >origen> destino></li>
+                    <li>move &lt;origen&gt; &lt;destino&gt;</li>
                     <p> Con un funcionamiento similar al comando copiar, este comando permite mover un archivo desde su ubicación actual a la nueva ubicación que le indiques en los atributos adicionales del comando.</p>
                     
-                    <li>del  >archivo o carpeta></archivo></li>
+                    <li>del  &lt;archivo o carpeta&gt;</archivo></li>
                     <p>Elimina un archivo concreto o todo el contenido de la carpeta indicada, pero no elimina la carpeta en sí. Si lo que quieres es eliminar toda la carpeta, debes usar el comando rd en lugar del comando del.</p>
                     
-                    <li>rename</li>
+                    <li>rename &lt;origen&gt; &lt;destino&gt;</li>
                     <p>Con este comando conseguirás renombrar un archivo e incluso podrás cambiar su extensión indicándola en los atributos de destino.</p>
                     
                     <li>format</li>
                     <p>Un comando tan útil como peligroso con el que podrás formatear (borrar) por completo una determinada unidad de disco. Decimos que es peligroso ya que cualquier error al indicar la unidad a formatear podría terminar en una pérdida irreparable de datos.</p>
                     
-                    <li>md >nombredecarpeta></li>
-                    <p> Este comando es una abreviatura del comando mkdir <nombredecarpeta> con los que puedes crear nuevas carpetas en los directorios en los que te encuentres.</p>
+                    <li>md &lt;nombredecarpeta&gt;</li>
+                    <p> Este comando es una abreviatura del comando mkdir &lt;nombredecarpeta &gt; con los que puedes crear nuevas carpetas en los directorios en los que te encuentres.</p>
                     
-                    <li>tree</li>
+                    <li>tree &lt;carpeta&gt;</li>
                     <p>Permite obtener una vista completa del árbol de directorios de una ruta concreta en la que se mostrarán todos los archivos y directorios.</p>
                     
-                    <li>type >archivo.extensión>:</li>
+                    <li>type &lt;archivo.extensión&gt;</li>
                     <p>Este comando permite abrir archivos de texto en la ventana de comandos, sin necesidad de abrir ninguna aplicación adicional. Muy útil para abrir archivos de configuración del sistema o de programas.</p>
+                </ul>
+                
+                
+                <h3>Resolver problemas desde el Símbolo del sistema</h3>
+                <ul>
+                    <li>systeminfo</li>
+                    <p>Antes afrontar cualquier reparación o análisis conviene conocer el ordenador en el que estás trabajando. Para ello nada mejor que este comando, con el que podrás obtener un listado con la información del sistema operativo, del procesador, placa base, cantidad de memoria RAM instalada, etc.</p>
                     
+                    <li>ver</li>
+                    <p> Si solo quieres conocer qué versión de Windows está instalada en el PC, bastará este comando para obtenerla.</p>
                     
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>control panel</li>
+                    <p> Con la llegada de Windows 10 el panel de control ha pasado a un segundo plano, pero todavía sigue siendo la forma más rápida de acceder a determinadas opciones avanzadas del sistema. Invoca este comando y el panel de control se iniciará.</p>
+                    
+                    <li>time</li>
+                    <p>Aunque pueda parecer curioso, muchos problemas surgen porque la hora del equipo no es la correcta y no puede sincronizar con otros servidores o servicios externos. Dado que muchos ordenadores y servidores se usan en remoto y no cuentan con una pantalla conectada, este comando te permite ver la hora del sistema y modificarla si es necesario.</p>
+                    
+                    <li>driverquery</li>
+                    <p>Este comando permite obtener un listado completo de todos los controladores instalados en el equipo, detallando su nombre, la fecha de instalación y una breve descripción de su uso.</p>
+                    
+                    <li>tasklist</li>
+                    <p>Escribiendo este comando para CMD obtendrás un listado completo de todos los procesos del sistema que se encuentran activos y la cantidad de memoria que están usando. Este comando puede resultar muy útil para detectar procesos que se han quedado “colgados” o rastrear infecciones de virus.</p>
+                    
+                    <li>taskkill /PID &lt; nº ID del proceso&gt;</li>
+                    <p>Si el comando anterior era útil para ver los procesos activos, con este conseguirás cerrar el proceso que le indiques, usando la información que encuentras en ese listado. Para lograrlo solo tienes que insertar el comando acompañado de número de identificación del proceso (PID).</p>
+                    
+                    <li>sfc</li>
+                    <p>Es una de las herramientas de mantenimiento más útiles ya que examina la integridad de todos los archivos de sistema y reemplaza los dañados por la versión correcta de Microsoft. El comando verifica archivos dañados o que fallen, reemplazándolos automáticamente utilizando copias en caché del sistema. Uno de los usos más habituales de este comando de Windows es acompañado del atributo sfc /scannow con el que se inicia un análisis inmediato.</p>
+                    
+                    <li>cleanmgr</li>
+                    <p> Ejecuta la herramienta Liberar espacio en disco de manera automática, sin que tengas que configurar nada más. Una alternativa fácil y rápida para realizar el mantenimiento de tu equipo y recuperar algo de espacio de almacenamiento útil.</p>
+                    
+                    <li>winsat</li>
+                    <p>Tras este comando se esconde la Herramienta de Evaluación de la experiencia de Windows que Microsoft introdujo en Windows con el inefable Windows Vista y que nos permitía obtener una valoración del rendimiento del equipo. Con este sencillo comando puedes lanzar un benchmark que analizará el rendimiento del equipo y te permitirá conocer si sus componentes funcionan como debieran. Este comando suele ir acompañado del atributo Formal y –V con los que, tras finalizar el análisis, mostrarán un informe de valoración.</p>
+                    
+                    <li>defrag</li>
+                    <p>Poco que comentar de este comando que permite desfragmentar el disco duro que se le indique.</p>
+                    
+                    <li>diskpart</li>
+                    <p>Otro útil comando de CMD para la gestión de los discos duros del sistema es el comando diskpart, que permite conocer y configurar las propiedades de los discos y particiones presentes en el sistema. Basta con iniciar esta herramienta ejecutando este comando y escribir el atributo list disk o list volume para obtener un listado completo de los discos o volúmenes presentes en el equipo.</p>
+                    
+                    <li>chkdsk</li>
+                    <p>Otra de las herramientas imprescindibles en caso de error en el sistema es la que lanza este comando que realiza un chequeo de la superficie del disco duro y permite detectar sectores defectuosos y otros fallos del disco.</p>
+                    
+                    <li>ipconfig</li>
+                    <p>Es uno de los comandos más populares ya que muestra información detallada de tu conexión de red para cualquier adaptador del equipo, incluyendo la dirección IP, máscara de subred y puerta de enlace predeterminada. Utilizando los atributos adecuados es una completa caja de herramientas para resolver problemas de conexión y configuración de redes.</p>
+                    
+                    <li>getmac</li>
+                    <p>Esto comando muestra la dirección MAC o dirección física del adaptador de red de existir uno en el equipo.</p>
+                    
+                    <li>ping &lt;host&gt;</li>
+                    <p> Otro de los comandos habituales a la hora de detectar problemas de conexión. Este comando de Windows ejecuta un ping o llamada al host indicado mostrando si la conexión obtiene respuesta o no.</p>
+                    
+                    <li>netstat</li>
+                    <p>Este comando muestra estadísticas del protocolo y conexiones TCP/IP en uso. Resulta muy útil para comprobar el estado de puertos del equipo y si vas a solucionar problemas de conexión.</p>
+                    
+                    <li>tracert &lt;host&gt;</li>
+                    <p>Te muestra todos los redireccionamientos que tu conexión lleva a cabo hasta llegar al host indicado, que puede ser, por ejemplo, una página web.</p>
+                    
+                    <li>shutdown</li>
+                    <p>¿Sabías que también puedes forzar el apagado o reinicio de tu equipo desde la consola CMD? Para ello solo tienes que escribir este comando. Si quieres programar el apagado para más tarde, solo tienes que añadir el atributo -s -t &lt;tiempo en segundos&gt;. Si solo quieres reiniciar el ordenador, bastará con acompañar a este comando del atributo –r.</p>
+                    
+                    <li>logoff</li>
+                    <p>Cierra la sesión de usuario actual, pero mantiene funcionando el sistema operativo.</p>
+                    
                 </ul>
             </section>
        </div>
@@ -82,3 +134,25 @@
        <footer></footer>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
