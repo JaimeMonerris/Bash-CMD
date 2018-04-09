@@ -52,3 +52,27 @@ ul {
 li {
     font: bold 1.2em sans-serif;
 }
+
+nav {
+    position: fixed;
+    z-index: 1;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(245, 245, 220, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+nav li {
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
